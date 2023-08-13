@@ -44,3 +44,20 @@ elif bmi < 35:
    
 else:
     print (f"Your BMI is {bmi}, you are clinically obese.")
+
+# Leap year calculation: 
+
+year = int(input("Which year do you want to check? "))
+
+# The year should be evenly divisible by 100 & 400.
+
+if (year % 100 == 0) and (year % 400 == 0):
+    print ("Leap year.")
+
+# The year should be not divisble by 100 but should be evenly divisiable by 4. 
+
+elif (year % 100 != 0) and (year % 4 == 0):
+    print ("Leap year")
+
+else:
+    print ("Not leap year.")
